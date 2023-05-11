@@ -1,0 +1,54 @@
+.about-index img {
+  width: 100%;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about-index .about-content {
+  position: relative;
+}
+.about-index .about-content .about__content {
+  position: absolute;
+  top: 320px;
+  left: 320px;
+  color: white;
+  font-size: 48px;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+}
+
+.about__product {
+  padding-top: 70px;
+}
+.about__product .about__product-thumbnail {
+  display: flex;
+  gap: 2rem;
+}
+.about__product .about__product-thumbnail img {
+  width: 100%;
+  height: 100%;
+}
+.about__product .product__btn {
+  position: relative;
+  text-align: center;
+}
+.about__product .product__btn button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 16px;
+}
+
+.founder-index .founder-wrapper {
+  display: flex;
+  gap: 1rem;
+}
+.founder-index .title {
+  margin-top: 70px;
+  margin-bottom: 120px;
+}
+.founder-index .founder-name {
+  font-family: "Arimo", sans-serif;
+  font-size: 21px;
+  padding: 15px 0;
+}/*# sourceMappingURL=about.css.map */

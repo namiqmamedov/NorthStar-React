@@ -1,0 +1,309 @@
+
+.home-index{
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
+    .home__index-content{
+        position: relative;
+
+        .home__index-body{
+            position: absolute;
+            top: 255px;
+            right: 18.5%;
+            text-align: center;
+        }
+        h1{
+            text-transform: uppercase;
+            color: white;
+            font-size: 48px;
+            font-weight: bold;
+            font-family: 'Lato',sans-serif;
+            max-width: 480px;
+            text-align: center;
+            word-spacing: 3px;
+        }
+
+        a{
+            color: white;
+            font-size: 21px;
+            display: block; 
+            padding: 10px 20px;
+            border: 6px solid white;
+            width: 44%;
+            margin: 44px auto;
+        }
+    }
+}
+
+.section__top
+{
+    padding-top: 45px;
+}
+
+.section-title{
+    padding-bottom: 10px;
+    text-align: center;
+}
+.section-subtitle{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.main__wrapper{
+    display: flex;
+    margin-top: 65px;
+    .card-top{
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+    }
+
+    .main__thumbnail{
+        display: flex;
+        text-align: center;
+        gap: 1rem;
+        margin-top: 70px;
+        padding-bottom: 60px;
+        .main__card{
+            background: black;
+            .main__body{
+                padding: 125px 0;
+            }
+            &:first-child{
+                width: 57%;
+            }
+            &:last-child{
+                width: 43%;
+            }
+            .main__thumbnail{
+                padding-top: 90px;
+            }
+
+            .main-title{
+                color: white;
+                padding-bottom: 10px;
+            }
+            .description{
+                color: white;
+                max-width: 340px;
+                margin: 0 auto;
+                padding-bottom: 35px;
+            }
+            .main-btn{
+                background: white;
+                padding: 10px 20px;
+            }
+        }
+    }
+    .main-card{
+        h4{
+            font-size: 1rem;
+            font-family: 'Baloo',sans-serif
+        }
+        img{
+            width: 30px;
+        }
+        .description{
+            max-width: 233px;
+            padding-left: 2.66rem;
+        }
+    }
+}
+
+.shopNow-btn{
+    text-align: center;
+    margin: 50px 0 !important;
+    button{
+        background: #024E82;
+    padding: 14px 30px;
+    border-radius: 0px !important;
+    }
+}
+
+@media only screen and (max-width: 576px){
+
+    .home-index{
+        .home__index-content{
+            .home__index-body{
+                top: 77px;
+                right: 0;
+                left: 0;
+                h1{
+                    margin: 0 auto;
+                    font-size: 1.2rem;
+                }
+                a{
+                    width: 46% !important;
+                    padding: 3px 0;
+                    font-size: 18px;
+                }
+            }
+        }
+        img{
+            height: 260px;
+        }
+    }
+
+    .section-title{
+        font-size: 1.4rem !important;
+    }
+
+    .main__thumbnail{
+        justify-content: center;
+        flex-wrap: wrap;
+        .main__card{
+            width: 94% !important;
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+    
+    .home-index{
+        .home__index-content{
+            .home__index-body{
+                top: 155px;
+                right: 0;
+                left: 0;
+                h1{
+                    margin: 0 auto;
+                    font-size: 1.2rem;
+                }
+                a{
+                    width: 46% !important;
+                    padding: 3px 0;
+                    font-size: 18px;
+                }
+            }
+        }
+        img{
+            height: 435px;
+        }
+    }
+
+    .section-title{
+        font-size: 1.4rem !important;
+    }
+
+    .main__thumbnail{
+        justify-content: center;
+        flex-wrap: wrap;
+        .main__card{
+            width: 94% !important;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+    
+    .home-index{
+        .home__index-content{
+            .home__index-body{
+                top: 155px;
+                right: 0;
+                left: 0;
+                h1{
+                    margin: 0 auto;
+                    font-size: 2.2rem;
+                }
+                a{
+                    width: 30% !important;
+                    padding: 3px 0;
+                    font-size: 18px;
+                }
+            }
+        }
+        img{
+            height: 435px;
+        }
+    }
+
+    .section-title{
+        font-size: 1.4rem !important;
+    }
+
+    .main__thumbnail{
+        justify-content: center;
+        flex-wrap: wrap;
+        .main__card{
+            width: 100% !important; 
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+    
+    .home-index{
+        .home__index-content{
+            .home__index-body{
+                top: 195px;
+                right: 0;
+                h1{
+                    margin: 0 auto;
+                    font-size: 41px;
+                }
+                a{
+                    width: 30% !important;
+                    padding: 3px 0;
+                    font-size: 18px;
+                }
+            }
+        }
+
+    }
+
+    .section-title{
+        font-size: 1.4rem !important;
+    }
+
+    .main__thumbnail{
+        justify-content: center;
+        flex-wrap: wrap;
+        .main__card{
+            &:first-child{
+                width: 55% !important;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px){
+    
+    .home-index{
+        .home__index-content{
+            .home__index-body{
+                top: 195px;
+                right: 146px;
+                h1{
+                    margin: 0 auto;
+                    font-size: 41px;
+                }
+                a{
+                    width: 30% !important;
+                    padding: 3px 0;
+                    font-size: 18px;
+                }
+            }
+        }
+        img{
+            height: 
+            648px;
+        }
+
+    }
+
+    .section-title{
+        font-size: 1.4rem !important;
+    }
+
+    .main__thumbnail{
+        justify-content: center;
+        flex-wrap: wrap;
+        .main__card{
+            &:first-child{
+                width: 55% !important;
+            }
+        }
+    }
+}

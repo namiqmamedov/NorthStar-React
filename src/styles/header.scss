@@ -1,0 +1,132 @@
+.navbar {
+    padding-top: 24px !important;
+
+    .navbar-brand {
+        color: black;
+        font-size: 36px;
+    }
+
+    .nav__main {
+        gap: 2rem;
+        padding-left: 70px;
+    }
+
+    .container {
+        .navbar-nav {
+            a {
+                text-transform: uppercase;
+                transition: .3s ease-in-out;
+                color: black;
+
+                &:hover {
+                    color: #024E82;
+                }
+
+                svg {
+                    width: 1.5rem;
+                    height: 1.2rem;
+                }
+            }
+        }
+
+        .nav__options {
+            gap: 1rem;
+        }
+    }
+
+    .cart-link {
+        position: relative;
+
+        .cart-quantity {
+              position: absolute;
+            background: #024E82;
+            border-radius: 50%;
+            right: -8px;
+            top: -7px;
+            color: #fff;
+            padding: 3px 7px;
+            font-size: 10px;
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .navbar {
+        .navbar-brand {
+            font-size: 26px;
+        }
+
+        .nav__options {
+            display: none !important;
+        }
+
+        .nav__main {
+            padding-left: 0;
+            gap: 1rem;
+        }
+
+        .navbar-nav {
+            padding: 30px 0;
+        }
+
+        .navbar-toggler {
+            &:focus {
+                box-shadow: none !important;
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .navbar {
+        .navbar-brand {
+            font-size: 26px;
+        }
+
+        .nav__options {
+            display: none !important;
+        }
+
+        .nav__main {
+            padding-left: 0;
+            gap: 1rem;
+        }
+
+        .navbar-nav {
+            padding: 30px 0;
+        }
+
+        .navbar-toggler {
+            &:focus {
+                box-shadow: none !important;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .navbar {
+        .navbar-brand {
+            font-size: 26px;
+        }
+
+        .nav__options {
+            display: none !important;
+        }
+
+        .nav__main {
+            padding-left: 0;
+            gap: 1rem;
+        }
+
+        .navbar-nav {
+            padding: 30px 0;
+        }
+
+        .navbar-toggler {
+            &:focus {
+                box-shadow: none !important;
+            }
+        }
+    }
+}

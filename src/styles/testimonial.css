@@ -1,0 +1,23 @@
+.testimonial-item {
+  padding: 80px 0;
+}
+.testimonial-item .testimonial-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.testimonial-item .testimonial-body img {
+  padding-right: 40px;
+}
+.testimonial-item .testimonial-body .testimonial-center .testimonial-description {
+  font-family: "Baloo";
+  font-size: 24px;
+  color: #555555;
+  max-width: 700px;
+  padding-bottom: 10px;
+}
+.testimonial-item .testimonial-body .testimonial-center .testimonial-name {
+  font-family: "Arimo";
+  font-size: 19px;
+  font-weight: bold;
+}/*# sourceMappingURL=testimonial.css.map */
