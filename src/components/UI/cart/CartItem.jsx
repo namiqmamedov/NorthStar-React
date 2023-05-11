@@ -21,6 +21,13 @@ const CartItem = ({item}) => {
         }))
     }
 
+    const decreaseItem = () => {
+       dispatch(cartActions.removeItem(id))
+    }
+
+    const deleteItem = () => {
+        dispatch(cartActions.deleteItem(id))
+    }
 
   return (
    <div className="list-group card__item">
@@ -33,10 +40,10 @@ const CartItem = ({item}) => {
                 <div className='d-flex align-items-center gap-3 justify-content-between increase__decrease-btn'>
                     <span className='increase__btn' onClick={incrementItem}><AiOutlinePlus/></span>
                     <span className='quantity'>{quantity}</span>
-                    <span className='decrease__btn'><AiOutlineMinus/></span>
+                    <span className='decrease__btn' onClick={decreaseItem}><AiOutlineMinus/></span>
                 </div>
             </div>
-            <span className='delete__btn'><AiOutlineClose/></span>
+            <span className='delete__btn' onClick={deleteItem}><AiOutlineClose/></span>
         </div>
     </div>
    </div>
