@@ -3,9 +3,7 @@ import Testimonial01 from '../../../assets/about/testimonial01.png'
 import Testimonial02 from '../../../assets/about/testimonial02.png'
 import Testimonial03 from '../../../assets/about/testimonial03.png'
 import '../../../styles/testimonial.css'
-import {FiUser} from 'react-icons/fi'
-import Quote from '../../../assets/about/quote.svg'
-
+import {ImQuotesLeft} from 'react-icons/im'
 
 const testimonialData = [
     {
@@ -35,9 +33,9 @@ const Testimonial = () => {
                 {testimonialData.map((item) => (
                     <div className='testimonial-item'>
                         <div className="testimonial-body">
-                        <img src={item.image} alt="Testimonial Image" />
+                            <img src={item.image} alt="" />
                         <div className="testimonial-center">
-                        <img src={Quote} alt="Quote" />
+                        <ImQuotesLeft/>
                         <div className="testimonial-description">
                             {item.desc}
                         </div>

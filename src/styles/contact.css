@@ -1,0 +1,214 @@
+.contact-index {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.contact-index img {
+  width: 100%;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.contact-index .contact-main {
+  position: relative;
+}
+.contact-index .contact-main .contact__content {
+  position: absolute;
+  top: 213px;
+  left: 16%;
+  color: white;
+  font-size: 48px;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+}
+
+.contact__main {
+  padding-top: 120px;
+}
+.contact__main .title {
+  font-family: "Arimo", sans-serif;
+  padding-bottom: 15px;
+  font-size: 36px;
+  font-weight: bold;
+}
+.contact__main .description {
+  font-family: "Lato";
+  font-size: 1rem;
+}
+.contact__main .form-top {
+  display: flex;
+  gap: 4rem;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+.contact__main .form-index {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+.contact__main .form-index input {
+  height: 58px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.contact__main .form-index textarea {
+  height: 188px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+.contact__main .contact-detail .phone {
+  margin-bottom: 55px;
+  display: block;
+}
+.contact__main .contact-detail .get-touch {
+  display: flex;
+  flex-direction: column;
+  color: #555555 !important;
+  font-family: "Lato", sans-serif;
+}
+.contact__main .contact-detail .text {
+  color: #555555 !important;
+  font-family: "Lato", sans-serif;
+}
+.contact__main .contact-detail .title__detail {
+  font-weight: bold;
+  font-size: 24px;
+  font-family: "Arimo", sans-serif;
+}
+.contact__main .send-message {
+  margin-top: 22px;
+  margin-bottom: 55px;
+  padding: 18px 36px;
+  background: #024E82;
+  border-radius: 0;
+}
+.contact__main .message {
+  width: 100%;
+}
+
+@media only screen and (max-width: 576px) {
+  .contact-index img {
+    height: 220px;
+  }
+  .contact-index .contact-main .contact__content {
+    font-size: 27px;
+    top: 155px !important;
+    left: 5.4% !important;
+  }
+  .contact__main {
+    padding-top: 57px;
+  }
+  .contact__main .contact-detail {
+    padding-bottom: 50px !important;
+  }
+  .contact__main .send-message {
+    padding: 14px 17px;
+  }
+  .contact__main .title {
+    font-size: 26px;
+  }
+  .contact__main .form-top {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .contact__main .form-top .form-index {
+    width: 100%;
+  }
+  .contact__main .form-top .form-index textarea {
+    height: 133px !important;
+  }
+  .contact__main label {
+    padding-bottom: 7px;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .contact-index img {
+    height: 250px;
+  }
+  .contact-index .contact-main .contact__content {
+    font-size: 27px;
+    top: 155px !important;
+    left: 16.4% !important;
+  }
+  .contact__main {
+    padding-top: 57px;
+  }
+  .contact__main .contact-detail {
+    padding-bottom: 50px !important;
+  }
+  .contact__main .send-message {
+    padding: 14px 17px;
+  }
+  .contact__main .title {
+    font-size: 26px;
+  }
+  .contact__main .form-top {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .contact__main .form-top .form-index {
+    width: 100%;
+  }
+  .contact__main .form-top .form-index textarea {
+    height: 133px !important;
+  }
+  .contact__main label {
+    padding-bottom: 7px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .contact-index img {
+    height: 250px;
+  }
+  .contact-index .contact-main .contact__content {
+    font-size: 27px;
+    top: 155px !important;
+    left: 14.5% !important;
+  }
+  .contact__main {
+    padding-top: 57px;
+  }
+  .contact__main .contact-detail {
+    padding-bottom: 50px !important;
+  }
+  .contact__main .send-message {
+    padding: 14px 17px;
+  }
+  .contact__main .title {
+    font-size: 26px;
+  }
+  .contact__main .form-top {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .contact__main .form-top .form-index textarea {
+    height: 133px !important;
+  }
+  .contact__main .contact-detail {
+    display: flex;
+    justify-content: space-between;
+  }
+  .contact__main label {
+    padding-bottom: 7px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .contact-index img {
+    height: 250px;
+  }
+  .contact-index .contact-main .contact__content {
+    font-size: 27px;
+    top: 155px !important;
+    left: 11.5% !important;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .contact-index img {
+    height: 250px;
+  }
+  .contact-index .contact-main .contact__content {
+    font-size: 27px;
+    top: 155px !important;
+    left: 11.5% !important;
+  }
+}/*# sourceMappingURL=contact.css.map */

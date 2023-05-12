@@ -11,11 +11,21 @@ import '../styles/about.css'
 import {Link} from 'react-router-dom'
 import Testimonial from '../components/UI/testimonial/Testimonial';
 
+
+const aboutData = [
+    {
+        image:AboutProduct01
+    },
+    {
+        image:AboutProduct02
+    },
+]
+
 const About = () => {
   return (
     <>
     <div className='about-index'>
-        <div className="about-content">
+        <div className="about-main">
             <div className="about__content">
             About Northstar
             </div>
@@ -26,16 +36,15 @@ const About = () => {
     <div className="about__product">
         <div className="container">
             <div className="row">
-                <div className="about__product-thumbnail">
-                    <div className="product__item">
-                    <div className='product__btn'>
-                    {/* <Button variant="outlined">Outlined</Button> */}
-                    </div>
-                    <img src={AboutProduct01} alt="About Product" />
-                    </div>
-                    <div className="product__item">
-                    <img src={AboutProduct02} alt="About Product" />
-                    </div>
+                <div className="about__product-thumbnail col-lg-12 col-12 col-md-12">
+                    {aboutData.map((item) => (
+                        <div className="product__item">
+                        <Link className='product__btn'>
+                            BUY NOW
+                        </Link>
+                        <img src={item.image} alt="About Product" />
+                        </div>   
+                    ))}    
                 </div>
             </div>
         </div>
@@ -47,7 +56,7 @@ const About = () => {
         </h2>
         <div className="container">
             <div className="row">
-                <div className="founder-wrapper">
+                <div className="founder-wrapper col-lg-12 col-12">
                 <div className="founder-item">
                     <img src={Founder01} alt="Founder Image" />
                     <div className="founder-name">
@@ -78,7 +87,6 @@ const About = () => {
     </div>
 
     <Testimonial/>
-
     </>
   )
 }
