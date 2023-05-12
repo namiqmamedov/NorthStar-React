@@ -29,6 +29,7 @@ function Header() {
             <Link to='/'>Home</Link>
             <Link to='/about'>About</Link>
             <Link to='/contact'>Contact Us</Link>  
+            <Link to='/cart'>CART</Link>
           </Nav>
           <Nav className='nav__options'>
             <Link>

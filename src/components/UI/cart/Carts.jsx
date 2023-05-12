@@ -3,7 +3,7 @@ import CartItem from './CartItem'
 import {AiOutlineClose} from 'react-icons/ai'
 import {AiFillCloseCircle} from 'react-icons/ai'
 import {Link} from 'react-router-dom'
-import '../../../styles/shopping-cart.css'
+import '../../../styles/cart.css'
 import { useDispatch, useSelector} from 'react-redux'
 import { cartUiActions } from '../../../store/shopping-cart/cartUiSlice'
 
