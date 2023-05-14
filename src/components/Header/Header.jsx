@@ -22,7 +22,7 @@ function Header() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="white" variant="white">
       <Container>
-        <Navbar.Brand href="#home">NorthStar</Navbar.Brand>
+        <Navbar.Brand href="/">NorthStar</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto nav__main">

@@ -80,6 +80,12 @@ label {
 
 
 /* Product entries */
+
+.product-unshow{
+  text-indent: -999999999px;
+ }
+
+
 .product {
   margin-bottom: 20px;
   padding-bottom: 10px;
@@ -88,26 +94,38 @@ label {
   .product-image {
     text-align: center;
     img {
-      width: 100px;
+      width: 75px;
     }
   }
   
   .product-details {
+    padding-top: 30px;
     .product-title {
       margin-right: 20px;
       font-family: $font-bold;
     }
     .product-description {
+      padding-top: 30px;
       margin: 5px 20px 5px 0;
       line-height: 1.4em;
     }
   }
+
+  .product-price{
+    padding-top: 30px;
+  }
   
   .product-quantity {
+    padding-top: 30px;
+
     input {
       width: 40px;
       
     }
+  }
+
+  .product-line-price{
+    padding-top: 30px;
   }
   
   .remove-product {

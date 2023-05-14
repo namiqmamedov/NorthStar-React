@@ -1,10 +1,26 @@
 
 import {createSlice} from '@reduxjs/toolkit'
 
+const items =
+  localStorage.getItem("cartItems") !== null
+    ? JSON.parse(localStorage.getItem("cartItems"))
+    : [];
+
+const totalAmount =
+  localStorage.getItem("totalAmount") !== null
+    ? JSON.parse(localStorage.getItem("totalAmount"))
+    : 0;
+
+const totalQuantity =
+  localStorage.getItem("totalQuantity") !== null
+    ? JSON.parse(localStorage.getItem("totalQuantity"))
+    : 0;
+
+
 const initialState = {
-    cartItems: [],
-    totalQuantity: 0,
-    totalAmount:0
+    cartItems: items,
+    totalAmount: totalAmount,
+    totalQuantity: totalQuantity,
 } 
 
 const cartSlice =  createSlice({
@@ -15,6 +31,7 @@ const cartSlice =  createSlice({
         // add item
 
         addItem(state,action){
+            debugger;
             const newItem = action.payload
             const exisitingItem = state.cartItems.find(item => item.id === newItem.id)
             state.totalQuantity++
@@ -37,6 +54,14 @@ const cartSlice =  createSlice({
             state.totalAmount = state.cartItems.reduce((total,item) => 
                 total + Number(item.price) * Number(item.quantity),0 // initial value should be 0
             );
+
+
+            localStorage.setItem('cartItems',JSON.stringify(state.cartItems.map(item=>item)))
+            
+            localStorage.setItem('totalAmount', JSON.stringify(state.totalAmount))
+            
+            localStorage.setItem('totalQuantity', JSON.stringify(state.totalQuantity))
+
         },
 
         // remove item
