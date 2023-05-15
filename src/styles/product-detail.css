@@ -121,12 +121,54 @@
 .product__index .product__index .nav-item button {
   padding: 15px 20px;
 }
-.product__index .product__index .tab__main {
-  padding: 10px 20px;
+.product__index .product__index .tab-content .tab__main {
+  padding: 40px 40px;
   border: 1px solid #EBEBEB;
 }
-.product__index .product__index .tab__main .tab__content {
-  padding: 20px 20px;
+.product__index .product__index .tab-content .review p {
+  color: #212245;
+  font-family: "Lato", sans-serif;
+}
+.product__index .product__index .tab-content .review .user__name {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.product__index .product__index .tab-content .review .user__email {
+  font-size: 12.8px;
+}
+.product__index .product__index .tab-content .review .feedback__text {
+  font-size: 1rem;
+  color: rgba(33, 34, 69, 0.7137254902);
+}
+.product__index .product__index .tab-content .form {
+  width: 60%;
+  margin: auto;
+  background: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 20px;
+  border-radius: 5px;
+}
+.product__index .product__index .tab-content .form__group {
+  margin-bottom: 30px;
+}
+.product__index .product__index .tab-content .form__group input,
+.product__index .product__index .tab-content .food-details .tab__form .form__group textarea {
+  width: 100%;
+  background: transparent;
+  padding: 7px 20px;
+  border: none;
+  border-bottom: 1px solid rgba(33, 34, 69, 0.7137254902);
+}
+.product__index .product__index .tab-content .form__group input:focus,
+.product__index .product__index .tab-content .food-details .tab__form .form__group textarea:focus {
+  outline: none;
+}
+.product__index .product__index .tab-content .form__group textarea {
+  width: 100%;
+  background: transparent;
+  padding: 7px 20px;
+  border: none;
+  border-bottom: 1px solid rgba(33, 34, 69, 0.7137254902);
 }
 .product__index .product__index .nav-link {
   border: none;

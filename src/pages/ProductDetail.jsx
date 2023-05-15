@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import {useParams} from 'react-router-dom'
 import { useDispatch } from 'react-redux'
-import Product1 from '../assets/product/Product1.png'
 import Typography from '@mui/material/Typography';
 import Breadcrumbs from '@mui/material/Breadcrumbs'
 import Box from '@mui/material/Box';
@@ -11,7 +10,6 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import Link from '@mui/material/Link';
 import Button from '@mui/material/Button';
-import '../styles/product-detail.css'
 import {HiOutlineMail} from 'react-icons/hi'
 import {AiFillStar} from 'react-icons/ai'
 import {AiOutlineStar} from 'react-icons/ai'
@@ -19,21 +17,21 @@ import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import products from '../data/products'
 import { cartActions } from '../store/shopping-cart/cartSlice';
-
+import '../styles/product-detail.css'
 
 
 const ProductDetail = () => {
 
-    const [age, setAge] = React.useState('');
+    const [size, setSize] = React.useState('');
 
     const handleChange = (event) => {
-      setAge(event.target.value);
+        setSize(event.target.value);
     };
 
     const {id} = useParams();
     const dispatch = useDispatch();
     const product = products.find(product => product.id === id)
-    const {title, price,desc, image} = product
+    const {title, price, desc, image} = product
 
     const addItem = () =>{
       dispatch(cartActions.addItem({
@@ -98,11 +96,11 @@ const ProductDetail = () => {
                             <Select
                             labelId="demo-simple-select-label"
                             id="demo-simple-select"
-                            value={age}
-                            label="Age"
+                            value={size}
+                            label="Size"
                             onChange={handleChange}
                             >
-                            <MenuItem className='test' value={10}>Ten</MenuItem>
+                            <MenuItem value={10}>Ten</MenuItem>
                             <MenuItem value={20}>Twenty</MenuItem>
                             <MenuItem value={30}>Thirty</MenuItem>
                             </Select>
@@ -147,7 +145,32 @@ const ProductDetail = () => {
                            </div>
                         </Tab>
                         <Tab eventKey="review" title="Reviews(0)">
-                        <h1>hello</h1>
+                        <div className="tab__main">
+                        <div class="review">
+                            <p class="user__name mb-0">Jhon Doe</p>
+                            <p class="user__email">user@protonmail.com</p>
+                            <p class="feedback__text">great product</p>
+                        </div>
+                        <div class="review">
+                            <p class="user__name mb-0">Ricardo Gonzalez</p>
+                            <p class="user__email">ricardo@protonmail.com</p>
+                            <p class="feedback__text">Thank you !</p>
+                        </div>
+                        <form class="form">
+                            <div class="form__group">
+                                <input type="text" placeholder="Enter your name" required=""/>
+                            </div>
+                            <div class="form__group">
+                                <input type="email" placeholder="Enter your email" required=""/>
+                            </div>
+                            <div class="form__group">
+                                <textarea rows="5" type="text" placeholder="Write your review">
+                                    
+                                </textarea>
+                            </div>
+                            <Button className='submitBtn' variant="contained">Submit</Button>
+                        </form>
+                        </div>
                         </Tab>
                         </Tabs>
                     </div>
