@@ -17,6 +17,7 @@ import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import products from '../data/products'
 import { cartActions } from '../store/shopping-cart/cartSlice';
+import ReactImageMagnify from 'react-image-magnify'
 import '../styles/product-detail.css'
 
 
@@ -48,7 +49,18 @@ const ProductDetail = () => {
             <div className="row">
                 <div className="product__main">
                     <div className="product__thubmanil col-lg-5">
-                        <img src={product.image} alt="Produt Image" />
+                    <ReactImageMagnify className='imageMagnify' {...{
+                        smallImage: {
+                            alt: 'Wristwatch by Ted Baker London',
+                            isFluidWidth: true,
+                            src: product.image,
+                        },
+                        largeImage: {
+                            src: product.image,
+                            width: 1200,
+                            height: 1800
+                        }
+                    }} />
                     </div>
                     <div className="product__content col-lg-7">
                     <div className="breadcrumb-main" id="breadcrumb-product">
@@ -91,7 +103,7 @@ const ProductDetail = () => {
                         </div>
                         <div className="product__size">
                         <Box sx={{ minWidth: 120 }}>
-                        <FormControl fullWidth>
+                        <FormControl fullWidth className='input__main'>
                             <InputLabel id="demo-simple-select-label">Select Size</InputLabel>
                             <Select
                             labelId="demo-simple-select-label"
@@ -165,7 +177,6 @@ const ProductDetail = () => {
                             </div>
                             <div class="form__group">
                                 <textarea rows="5" type="text" placeholder="Write your review">
-                                    
                                 </textarea>
                             </div>
                             <Button className='submitBtn' variant="contained">Submit</Button>

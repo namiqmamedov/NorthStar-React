@@ -1,6 +1,6 @@
 .cart__item-info img {
-    width: 35px;
-    height: 35px;
+  width: 60px;
+  height: 60px;
     object-fit: cover;
   }
   
@@ -18,9 +18,21 @@
     font-weight: 600;
     color: #df2020;
   }
+
+  .card__item{
+    padding-bottom: 25px;
+  }
+  .cart__product-info{
+    padding-left: 10px;
+  }
+
+  .delete__btn{
+    cursor: pointer;
+  }
   
   .increase__decrease-btn {
-    background: #fde4e4;
+    background: #ffffff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     padding: 2px 5px;
     border-radius: 5px;
   }

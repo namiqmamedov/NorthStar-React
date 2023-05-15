@@ -10,6 +10,9 @@
 .product__index .product__main .product__content {
   padding-left: 30px;
 }
+.product__index .product__main .imageMagnify {
+  z-index: 11;
+}
 .product__index #breadcrumb-product {
   margin-top: 0 !important;
 }
