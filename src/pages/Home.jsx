@@ -73,7 +73,7 @@ const Home = () => {
         <div className="container">
             <div className="row">
             {mainData.map((item,index) => (
-        <div className="main-card col-lg-3 col-6    " key={index}>
+        <div className="main-card col-lg-3 col-6" key={index}>
             <div className="main-item">
                 <div className="card-top">
                     <img className='main-image' src={item.logo} alt="Main Image" />

@@ -4,6 +4,7 @@ import {Routes, Route, Navigate} from 'react-router-dom'
 import About from '../pages/About'
 import Contact from '../pages/Contact'
 import ShoppingCart from '../pages/ShoppingCart'
+import ProductDetail from '../pages/ProductDetail'
 
 
 const Routers = () => {
@@ -14,6 +15,7 @@ const Routers = () => {
             <Route path='/about' element={<About />}/>
             <Route path='/contact' element={<Contact/>}/>
             <Route path='/cart' element={<ShoppingCart/>}/>
+            <Route path="/product/:id" element={<ProductDetail />} />
     </Routes>
   )
 }

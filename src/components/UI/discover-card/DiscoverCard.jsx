@@ -23,20 +23,21 @@ const DiscoverCard = (props) => {
     return (
         <>
           <div className="card-index">
-          <Link>
+          <Link to={`/product/${id}`}>
           <div className="card-thumbnail">
               <img src={image} alt="Card Image"/>
           </div>
+          </Link>
           <div className="card-body">
+          <Link to={`/product/${id}`}>
               <h4 className="card-title mt-3 mb-2">
                   {title}
               </h4>
               <span className="card-price">
                   ${price}
               </span>
-              <button onClick={addToCart } >Add to cart</button>
+        </Link>
           </div>
-          </Link>
       </div>
         </>
   )

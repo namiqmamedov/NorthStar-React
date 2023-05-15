@@ -1,0 +1,141 @@
+.product__index {
+  margin-top: 40px;
+}
+.product__index .product__main {
+  display: flex;
+}
+.product__index .product__main img {
+  width: 100%;
+}
+.product__index .product__main .product__content {
+  padding-left: 30px;
+}
+.product__index #breadcrumb-product {
+  margin-top: 0 !important;
+}
+.product__index .breadcrumb-main li {
+  font-family: "Arimo", sans-serif;
+}
+.product__index .breadcrumb-main .breadcrumb-base {
+  font-weight: bold;
+  color: black;
+  margin-bottom: 0 !important;
+}
+.product__index .product__content .feedback__main {
+  margin-bottom: 20px;
+}
+.product__index .product__content .feedback__main svg {
+  font-size: 1.2rem;
+  color: #D6763C;
+}
+.product__index .product__content .feedback__main .item__count {
+  padding-left: 7px;
+}
+.product__index .product__content .product__price {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 1rem;
+}
+.product__index .product__content .product__price .old__price {
+  font-size: 24px;
+  color: #818181;
+  font-family: "Arimo", sans-serif;
+}
+.product__index .product__content .product__price .main__price {
+  font-family: "Arimo", sans-serif;
+  font-size: 24px;
+  color: #024E82;
+}
+.product__index .product__content .product__size {
+  width: 40%;
+}
+.product__index .product__content .product__size #demo-simple-select {
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.product__index .product__content .product__size #demo-simple-select-label {
+  font-weight: bold;
+  font-family: "Lato", sans-serif;
+  color: black;
+}
+.product__index .product__content .product__size .MuiInputBase-formControl {
+  font-size: 2.8rem !important;
+  height: 59px;
+}
+.product__index .product__content .product__title {
+  margin-top: -30px;
+  margin-bottom: 18px;
+}
+.product__index .product__content .product__description {
+  margin-bottom: 68px;
+}
+.product__index .product__content .addToCart {
+  margin-top: 30px;
+  background: #024E82;
+  border-radius: 0px;
+  padding: 14px 47px;
+}
+.product__index .product__content .category__wrapper {
+  font-family: "Lato", sans-serif;
+}
+.product__index .product__content .category__wrapper span {
+  font-family: "Arimo", sans-serif;
+  font-weight: 400;
+  color: black;
+  padding-right: 7px;
+}
+.product__index .product__content .tag__wrapper {
+  font-family: "Lato", sans-serif;
+}
+.product__index .product__content .tag__wrapper span {
+  font-family: "Arimo", sans-serif;
+  font-weight: 400;
+  padding-right: 7px;
+  color: black;
+}
+.product__index .product__content .bottom__main {
+  margin-top: 30px;
+}
+.product__index .product__content .bottom__main .product__wrapper {
+  margin-bottom: 65px;
+}
+.product__index .product__content .bottom__main .social__link {
+  display: flex;
+  gap: 0.3rem;
+}
+.product__index .product__content .bottom__main .social__link .item {
+  border-radius: 50%;
+  background: #F1F1F1;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+.product__index .product__index {
+  margin-top: 120px;
+}
+.product__index .product__index .nav-item {
+  border: 1px solid #EBEBEB;
+  background: #ffffff;
+}
+.product__index .product__index .nav-item button {
+  padding: 15px 20px;
+}
+.product__index .product__index .tab__main {
+  padding: 10px 20px;
+  border: 1px solid #EBEBEB;
+}
+.product__index .product__index .tab__main .tab__content {
+  padding: 20px 20px;
+}
+.product__index .product__index .nav-link {
+  border: none;
+  font-family: "Arimo", sans-serif;
+  font-weight: bold;
+  color: #818181 !important;
+}
+.product__index .product__index .nav-link.active {
+  border-color: transparent;
+  background: transparent;
+  color: black !important;
+}/*# sourceMappingURL=product-detail.css.map */

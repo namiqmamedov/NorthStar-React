@@ -12,50 +12,43 @@ const ShoppingCart = () => {
     const totalAmount = useSelector((state) => state.cart.totalAmount);
     return (
         <section>
-          <div className="container">
-            <div className="row">
-            {cartItems.length === 0
-                ? (
-                    <h5 className="text-center m-5">Your cart is empty</h5>
-                )
-                : (
-                   <>
-                     <div class="shopping-cart">
-                        <div className="container">
-                            <div className="row">
-                                <div class="column-labels">
-                                    <label class="product-image product-unshow">Image</label>
-                                    <label class="product-details">Product</label>
-                                    <label class="product-price">Price</label>
-                                    <label class="product-quantity">Quantity</label>
-                                    <label class="product-line-price">Total</label>
-                                    {cartItems.map((item) => (<Tr item={item} key={item.id}/>))}
+            <div className="container">
+                <div className="row">
+                    <div className="breadcrumb-main">
+                    <Breadcrumbs aria-label="breadcrumb">
+                        <Link underline="hover" color="inherit" href="/" className="breadcrumb-item">
+                            HOME
+                        </Link>
+                        <Typography color="text.primary" class="breadcrumb-base">SHOPPING CART</Typography>
+                    </Breadcrumbs>
+                    </div>
+                    {cartItems.length === 0
+                        ? (
+                            <h5 className="text-center m-5">Your cart is empty</h5>
+                        )
+                        : ( <> <div class="shopping-cart">
+                            <div className="container">
+                                <div className="row">
+                                    <div class="column-labels">
+                                        <label class="product-image product-unshow">Image</label>
+                                        <label class="product-details product-unshow">Product</label>
+                                        <label class="product-price product-unshow">Price</label>
+                                        <label class="product-quantity product-unshow">Quantity</label>
+                                        <label class="product-line-price product-unshow">Total</label>
+                                        {cartItems.map((item) => (<Tr item={item} key={item.id}/>))}
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                     <div className="cart__totals">
-                     <h2>Cart Totals</h2>
-                     <div className="cart__price-section">
-                         <div className="subtotal content">
-                             <p>Subtotal</p>
-                             <span>${totalAmount}</span>
-                         </div>
-                         <div className="shipping content">
-                             <p>Shipping Fee</p>
-                             <span>FREE!!!</span>
-                         </div>
+                        </div> < div className = "cart__totals" > <h2>Cart Totals</h2> < div className = "cart__price-section" > <div className="subtotal content">
+                            <p>Subtotal</p>
+                            <span>${totalAmount}</span>
+                        </div> < div className = "shipping content" > <p>Shipping Fee</p> < span > FREE !!!</span> </div>
                          <div className="total-price content">
-                             <span>Total</span>
-                             <span>${totalAmount}</span>
-                         </div>
-                     </div>
-                     <Button className='checkout-btn' variant="contained">PROCEED TO CHECKOUT</Button>
-                  </div>
-                   </>
-                )}
+                             <span>Total</span > <span>${totalAmount}</span> </div>
+                     </div > <Button className='checkout-btn' variant="contained">PROCEED TO CHECKOUT</Button> </div>
+                   </>)}
+                </div>
             </div>
-          </div>      
         </section>
     );
 };
@@ -65,7 +58,7 @@ const Tr = (props) => {
     return (
         <div class="product">
             <div class="product-image">
-                <img src={image} alt="Product Image" />
+                <img src={image} alt="Product Image"/>
             </div>
             <div class="product-details">
                 <div class="product-title">{title}</div>
