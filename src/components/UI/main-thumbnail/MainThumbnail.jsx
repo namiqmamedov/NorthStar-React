@@ -18,7 +18,7 @@ const MainThumbnail = () => {
   return (
         <>
         {mainData.map((item,index) => (
-          <div className="main__card">
+          <div className="main__card" key={index}>
           <div className="main__body">
               <h2 className="main-title">
                   {item.title}

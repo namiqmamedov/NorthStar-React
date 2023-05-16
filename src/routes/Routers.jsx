@@ -5,6 +5,7 @@ import About from '../pages/About'
 import Contact from '../pages/Contact'
 import ShoppingCart from '../pages/ShoppingCart'
 import ProductDetail from '../pages/ProductDetail'
+import Checkout from '../pages/Checkout'
 
 
 const Routers = () => {
@@ -16,6 +17,7 @@ const Routers = () => {
             <Route path='/contact' element={<Contact/>}/>
             <Route path='/cart' element={<ShoppingCart/>}/>
             <Route path="/product/:id" element={<ProductDetail />} />
+            <Route path="/checkout" element={<Checkout />} />
     </Routes>
   )
 }

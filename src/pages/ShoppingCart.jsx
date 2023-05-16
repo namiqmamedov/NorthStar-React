@@ -54,7 +54,7 @@ const ShoppingCart = () => {
 };
 
 const Tr = (props) => {
-    const {id, image, title, price, quantity} = props.item;
+    const {id, image, title, size, price, quantity} = props.item;
     return (
         <div class="product">
             <div class="product-image">
@@ -64,6 +64,7 @@ const Tr = (props) => {
                 <div class="product-title">{title}</div>
             </div>
             <div class="product-price">{price}</div>
+            <div class="product-size">{size}</div>
             <div class="product-quantity">
                 <input type="number" value={quantity}/>
             </div>

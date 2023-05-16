@@ -23,8 +23,6 @@ import '../styles/product-detail.css'
 
 const ProductDetail = () => {
 
-    const [size, setSize] = React.useState('');
-
     const handleChange = (event) => {
         setSize(event.target.value);
     };
@@ -32,16 +30,20 @@ const ProductDetail = () => {
     const {id} = useParams();
     const dispatch = useDispatch();
     const product = products.find(product => product.id === id)
-    const {title, price, desc, image} = product
+    const {title, price, desc, size, image} = product
+   
 
     const addItem = () =>{
       dispatch(cartActions.addItem({
         id,
         title,
         price,
+        size: size01,
         image
     }))
     }
+
+    const [size01, setSize] = React.useState('');
 
   return (
     <div className='product__index'>
@@ -108,13 +110,18 @@ const ProductDetail = () => {
                             <Select
                             labelId="demo-simple-select-label"
                             id="demo-simple-select"
-                            value={size}
+                            value={size01}
                             label="Size"
                             onChange={handleChange}
                             >
-                            <MenuItem value={10}>Ten</MenuItem>
-                            <MenuItem value={20}>Twenty</MenuItem>
-                            <MenuItem value={30}>Thirty</MenuItem>
+                            {
+                                size.map((item,index) => (
+                                    <MenuItem className='size-item' key={index} value={item}>
+                                        {item}
+                                        {/* <span className='size-wrapper'>S</span> */}
+                                    </MenuItem>
+                                ))
+                            }
                             </Select>
                         </FormControl>
                         </Box>

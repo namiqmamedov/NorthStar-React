@@ -8,7 +8,7 @@ import {cartActions}  from '../../../store/shopping-cart/cartSlice'
 
 const CartItem = ({item}) => {
 
-    const {id,title,price,image,quantity,totalPrice} = item
+    const {id,title,price,image,quantity,size,totalPrice} = item
 
     const dispatch = useDispatch();
 
@@ -17,6 +17,7 @@ const CartItem = ({item}) => {
             id,
             title,
             price,
+            size,
             image
         }))
     }
@@ -37,6 +38,7 @@ const CartItem = ({item}) => {
             <div>
                 <h6 className='cart__product-title'>{title}</h6>
                 <p className='cart__product-price d-flex align-items-center gap-5'>{quantity}x <span>${totalPrice}</span> </p>
+                <p>Size {size} </p>
                 <div className='d-flex align-items-center gap-3 justify-content-between increase__decrease-btn'>
                     <span className='increase__btn' onClick={incrementItem}><AiOutlinePlus/></span>
                     <span className='quantity'>{quantity}</span>

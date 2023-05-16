@@ -7,7 +7,7 @@ import { cartActions } from '../../../store/shopping-cart/cartSlice'
 
 const DiscoverCard = (props) => {
 
-    const {id,title,image,price} = props.item
+    const {id,title,size,image,price} = props.item
 
     const dispatch = useDispatch()
 
@@ -16,6 +16,7 @@ const DiscoverCard = (props) => {
             id,
             title,
             image,
+            size,
             price
         }))
     }

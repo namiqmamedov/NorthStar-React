@@ -59,8 +59,8 @@ const Home = () => {
             <div className="container">
                 <div className="row">
                     <div className="card-wrapper-index">
-                        {productData.map((item)=> (
-                            <DiscoverCard item={item}/>
+                        {productData.map((item,index)=> (
+                            <DiscoverCard key={index} item={item}/>
                         ))} 
                     </div>
                 </div>
@@ -99,7 +99,9 @@ const Home = () => {
             <div className="container">
                 <div className="row">
                     <div className="card-wrapper-index">
-                        {/* <DiscoverCard/> */}
+                         {productData.slice(-4).map((item,index)=> (
+                            <DiscoverCard key={index} item={item}/>
+                        ))} 
                     </div>
                     <Link className='shopNow-btn'>
                     <Button variant="contained">SHOP NOW</Button>
