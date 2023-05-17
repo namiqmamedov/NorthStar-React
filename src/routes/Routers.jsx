@@ -8,6 +8,7 @@ import ProductDetail from '../pages/ProductDetail'
 import Checkout from '../pages/Checkout'
 import Login from '../pages/Login'
 import Signup from '../pages/Signup'
+import Error from '../pages/Error'
 
 
 const Routers = () => {
@@ -22,6 +23,7 @@ const Routers = () => {
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
+            <Route path="*" element={<Error />} />
     </Routes>
   )
 }

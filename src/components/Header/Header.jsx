@@ -32,7 +32,7 @@ function Header() {
             <Link to='/cart'>CART</Link>
           </Nav>
           <Nav className='nav__options'>
-            <Link>
+            <Link to={'login'}>
               <FiUser/>
             </Link>
             <Link className='cart-link' onClick={toggleCart}>
