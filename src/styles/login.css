@@ -209,4 +209,77 @@
   .login-index .forms {
     padding: 60px 12px;
   }
+  .modal-box {
+    width: 85%;
+    height: 70%;
+  }
+  .modal-box #transition-modal-title {
+    font-size: 1rem;
+  }
+  .modal-box .modal__body {
+    padding: 10px 40px;
+  }
+  .modal-box .submit-btn {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .modal-box {
+    width: 85%;
+    height: 70%;
+  }
+  .modal-box #transition-modal-title {
+    font-size: 1rem;
+  }
+  .modal-box .modal__body {
+    padding: 10px 40px;
+  }
+  .modal-box .submit-btn {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .modal-box {
+    width: 65%;
+    height: 60%;
+  }
+  .modal-box #transition-modal-title {
+    font-size: 1rem;
+  }
+  .modal-box .modal__body {
+    padding: 10px 40px;
+  }
+  .modal-box .submit-btn {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .modal-box {
+    width: 60%;
+    height: 60%;
+  }
+  .modal-box #transition-modal-title {
+    font-size: 1rem;
+  }
+  .modal-box .modal__body {
+    padding: 10px 40px;
+  }
+  .modal-box .submit-btn {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal-box {
+    width: 47%;
+    height: 45%;
+  }
+  .modal-box #transition-modal-title {
+    font-size: 1rem;
+  }
+  .modal-box .modal__body {
+    padding: 10px 40px;
+  }
+  .modal-box .submit-btn {
+    text-align: left;
+  }
 }/*# sourceMappingURL=login.css.map */

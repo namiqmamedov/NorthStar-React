@@ -1,7 +1,7 @@
 /* Google Fonts - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-.modal-box{
+.modal-box {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -13,28 +13,30 @@
     padding: 4px;
     border: none;
 
-    .MuiTextField-root{
+    .MuiTextField-root {
         width: 100% !important;
         padding-bottom: 30px;
     }
-    .submit-btn{
+
+    .submit-btn {
         text-align: center;
         padding-bottom: 20px;
     }
 
-    #transition-modal-title{
-        font-family: 'Arimo',sans-serif;
+    #transition-modal-title {
+        font-family: 'Arimo', sans-serif;
         font-weight: bold;
         text-align: center;
         padding-top: 20px;
         padding-bottom: 15px;
         border-bottom: 1px solid #F3F3F3;
     }
-    .modal__body{
+
+    .modal__body {
         padding: 10px 80px;
     }
 
-    #transition-modal-description{
+    #transition-modal-description {
         padding-bottom: 20px;
     }
 
@@ -239,9 +241,98 @@
 }
 
 @media screen and (max-width: 576px) {
-    .login-index{
-        .forms{
+    .login-index {
+        .forms {
             padding: 60px 12px;
+        }
+    }
+
+    .modal-box {
+        width: 85%;
+        height: 70%;
+
+        #transition-modal-title{
+            font-size: 1rem;
+        }
+
+        .modal__body {
+            padding: 10px 40px;
+        }
+        .submit-btn{
+            text-align: left;
+        }
+    }
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .modal-box {
+        width: 85%;
+        height: 70%;
+
+        #transition-modal-title{
+            font-size: 1rem;
+        }
+
+        .modal__body {
+            padding: 10px 40px;
+        }
+        .submit-btn{
+            text-align: left;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .modal-box {
+        width: 65%;
+        height: 60%;
+
+        #transition-modal-title{
+            font-size: 1rem;
+        }
+
+        .modal__body {
+            padding: 10px 40px;
+        }
+        .submit-btn{
+            text-align: left;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .modal-box {
+        width: 60%;
+        height: 60%;
+
+        #transition-modal-title{
+            font-size: 1rem;
+        }
+
+        .modal__body {
+            padding: 10px 40px;
+        }
+        .submit-btn{
+            text-align: left;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .modal-box {
+        width: 47%;
+        height: 45%;
+
+        #transition-modal-title{
+            font-size: 1rem;
+        }
+
+        .modal__body {
+            padding: 10px 40px;
+        }
+        .submit-btn{
+            text-align: left;
         }
     }
 }
