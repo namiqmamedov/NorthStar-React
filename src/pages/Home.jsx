@@ -38,7 +38,6 @@ const mainData = [
 
 const Home = () => {
     return ( <> 
-
     <div className='home-index'>
         <div className="home__index-content">
             <div className="home__index-body">

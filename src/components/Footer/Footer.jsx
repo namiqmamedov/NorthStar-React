@@ -13,7 +13,6 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-
 const Footer = () => {
   return (
     <div className="footer-index">
@@ -24,7 +23,7 @@ const Footer = () => {
           <h5 className='title'>COMPANY INFO</h5>
           <ul>
             <li>
-              <Link>
+              <Link to={'about'}>
               About Us
               </Link>
             </li>
@@ -34,7 +33,7 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link>
+              <Link to={'contact'}>
               Contact Us
               </Link>
             </li>
