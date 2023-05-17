@@ -1,6 +1,7 @@
 import React from "react";
 import {useSelector, useDispatch} from "react-redux";
 import {cartActions} from "../store/shopping-cart/cartSlice";
+import {AiOutlineClose} from 'react-icons/ai'
 import Typography from '@mui/material/Typography';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import {Link} from 'react-router-dom'
@@ -10,6 +11,7 @@ import '../styles/shopping-cart.css'
 const ShoppingCart = () => {
     const cartItems = useSelector((state) => state.cart.cartItems);
     const totalAmount = useSelector((state) => state.cart.totalAmount);
+
     return (
         <section>
             <div className="container">
@@ -55,16 +57,20 @@ const ShoppingCart = () => {
 
 const Tr = (props) => {
     const {id, image, title, size, price, quantity} = props.item;
+    const dispatch = useDispatch();
+    const deleteItem = () => {
+        dispatch(cartActions.deleteItem(id))
+    }
     return (
         <div class="product">
             <div class="product-image">
+            <span className='delete__btn' onClick={deleteItem}><AiOutlineClose/></span>
                 <img src={image} alt="Product Image"/>
             </div>
             <div class="product-details">
                 <div class="product-title">{title}</div>
             </div>
             <div class="product-price">{price}</div>
-            <div class="product-size">{size}</div>
             <div class="product-quantity">
                 <input type="number" value={quantity}/>
             </div>

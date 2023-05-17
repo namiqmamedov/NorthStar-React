@@ -1,6 +1,7 @@
 
 import {createSlice} from '@reduxjs/toolkit'
 
+
 const items =
   localStorage.getItem("cartItems") !== null
     ? JSON.parse(localStorage.getItem("cartItems"))
@@ -15,6 +16,12 @@ const totalQuantity =
   localStorage.getItem("totalQuantity") !== null
     ? JSON.parse(localStorage.getItem("totalQuantity"))
     : 0;
+    
+    const deleteItem =
+    localStorage.getItem("deleteItem") !== null
+      ? JSON.parse(localStorage.getItem("deleteItem"))
+      : 0;
+   
 
 
 const initialState = {
@@ -61,10 +68,9 @@ const cartSlice =  createSlice({
             localStorage.setItem('totalAmount', JSON.stringify(state.totalAmount))
             
             localStorage.setItem('totalQuantity', JSON.stringify(state.totalQuantity))
-
         },
 
-        // remove item
+        // // remove item
 
         removeItem(state,action){
             const id = action.payload;
@@ -80,8 +86,14 @@ const cartSlice =  createSlice({
             }
 
             state.totalAmount = state.cartItems.reduce((total,item) => 
-                total + Number(item.price) * Number(item.quantity),0 // the initial value should be 0
+                total + Number(item.price) * Number(item.quantity),0  // the initial value should be 0
             )
+            
+            localStorage.setItem('cartItems',JSON.stringify(state.cartItems.map(item=>item)))
+            
+            localStorage.setItem('totalAmount', JSON.stringify(state.totalAmount))
+            
+            localStorage.setItem('totalQuantity', JSON.stringify(state.totalQuantity))
 
         },
 
@@ -89,10 +101,10 @@ const cartSlice =  createSlice({
 
         deleteItem(state, action) {
             const id = action.payload;
-            const existingItem = state.cartItems.find((item) => item.id === id);
+            const existingItem = state.cartItems.find(item => item.id === id );
       
             if (existingItem) {
-              state.cartItems = state.cartItems.filter((item) => item.id !== id);
+              state.cartItems = state.cartItems.filter(item => item.id !== id);
               state.totalQuantity = state.totalQuantity - existingItem.quantity;
             }
       
@@ -100,6 +112,14 @@ const cartSlice =  createSlice({
               (total, item) => total + Number(item.price) * Number(item.quantity),
               0 // the initial value should be 0
             );
+
+            
+            localStorage.setItem('cartItems',JSON.stringify(state.cartItems.map(item=>item)))
+            
+            localStorage.setItem('totalAmount', JSON.stringify(state.totalAmount))
+            
+            localStorage.setItem('totalQuantity', JSON.stringify(state.totalQuantity))
+
         },
     },
 })

@@ -53,7 +53,15 @@
     zoom: 1;
   }
 
-
+.product-image{
+  position: relative;
+  text-align: center;
+  .delete__btn{
+    position: absolute;
+    top: 28%;
+    left: 16%;
+  }
+}
   .shopping-cart,
   .column-labels,
   .product,
@@ -98,6 +106,7 @@
       text-align: center;
 
       img {
+        margin-left: 41px;
         width: 75px;
       }
     }

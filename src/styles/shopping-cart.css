@@ -52,6 +52,15 @@
 .shopping-cart .totals-item {
   zoom: 1;
 }
+.shopping-cart .product-image {
+  position: relative;
+  text-align: center;
+}
+.shopping-cart .product-image .delete__btn {
+  position: absolute;
+  top: 28%;
+  left: 16%;
+}
 .shopping-cart .product .product-price:before,
 .shopping-cart .product .product-line-price:before,
 .shopping-cart .totals-value:before {
@@ -80,6 +89,7 @@
   text-align: center;
 }
 .shopping-cart .product .product-image img {
+  margin-left: 41px;
   width: 75px;
 }
 .shopping-cart .product .product-details {
