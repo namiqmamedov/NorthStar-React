@@ -8,6 +8,15 @@
     font-size: 0.8rem;
     font-weight: 600;
   }
+  .product__size{
+    font-size: 14px;
+    font-family: 'Arimo',sans-serif;
+    margin-bottom: 6px;
+  }
+  .product__size span{
+      font-weight: bold;
+      font-size: 13px;
+  }
   
   .cart__product-price {
     font-size: 0.8rem;

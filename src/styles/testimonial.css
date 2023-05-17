@@ -1,26 +1,30 @@
-.testimonial-item {
+.testimonial .title {
+  padding: 70px 0;
+  font-family: "Arimo", sans-serif;
+}
+.testimonial .testimonial-item {
   padding: 80px 0;
 }
-.testimonial-item .testimonial-body {
+.testimonial .testimonial-item .testimonial-body {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.testimonial-item .testimonial-body img {
+.testimonial .testimonial-item .testimonial-body img {
   padding-right: 40px;
 }
-.testimonial-item .testimonial-body .testimonial-center .testimonial-description {
+.testimonial .testimonial-item .testimonial-body .testimonial-center .testimonial-description {
   font-family: "Baloo";
   font-size: 24px;
   color: #555555;
   max-width: 700px;
   padding-bottom: 10px;
 }
-.testimonial-item .testimonial-body .testimonial-center svg {
+.testimonial .testimonial-item .testimonial-body .testimonial-center svg {
   font-size: 2rem;
   margin-bottom: 15px;
 }
-.testimonial-item .testimonial-body .testimonial-center .testimonial-name {
+.testimonial .testimonial-item .testimonial-body .testimonial-center .testimonial-name {
   font-family: "Arimo";
   font-size: 19px;
   font-weight: bold;
@@ -99,7 +103,7 @@
     padding: 61px 0;
   }
   .testimonial .testimonial-item img {
-    width: 26%;
+    width: 18%;
   }
   .testimonial .testimonial-item .testimonial-description {
     font-size: 20px !important;

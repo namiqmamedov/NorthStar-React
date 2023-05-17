@@ -59,15 +59,17 @@
 }
 
 .founder-index {
+    background: #FBFBFB;
     .founder-wrapper {
         display: flex;
         flex-wrap: wrap;
         gap: 1rem;
+        padding-bottom: 90px;
     }
 
     .title {
-        margin-top: 70px;
-        margin-bottom: 120px;
+        padding-top: 80px;
+        padding-bottom: 80px;
     }
 
     .founder-name {

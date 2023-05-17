@@ -38,7 +38,7 @@ const CartItem = ({item}) => {
             <div>
                 <h6 className='cart__product-title'>{title}</h6>
                 <p className='cart__product-price d-flex align-items-center gap-5'>{quantity}x <span>${totalPrice}</span> </p>
-                <p>Size {size} </p>
+                <div className='product__size'>Size: <span>{size}</span></div>
                 <div className='d-flex align-items-center gap-3 justify-content-between increase__decrease-btn'>
                     <span className='increase__btn' onClick={incrementItem}><AiOutlinePlus/></span>
                     <span className='quantity'>{quantity}</span>

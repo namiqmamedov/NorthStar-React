@@ -29,6 +29,9 @@ const Testimonial = () => {
     <div className='testimonial'>
         <div className="container">
             <div className="row">
+            <h2 className="title text-center">
+            Testimonials
+            </h2>
                 <div className="testimonial-wrapper">
                 {testimonialData.map((item) => (
                     <div className='testimonial-item'>
