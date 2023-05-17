@@ -7,6 +7,7 @@ import ShoppingCart from '../pages/ShoppingCart'
 import ProductDetail from '../pages/ProductDetail'
 import Checkout from '../pages/Checkout'
 import Login from '../pages/Login'
+import Signup from '../pages/Signup'
 
 
 const Routers = () => {
@@ -20,6 +21,7 @@ const Routers = () => {
             <Route path="/product/:id" element={<ProductDetail />} />
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
     </Routes>
   )
 }

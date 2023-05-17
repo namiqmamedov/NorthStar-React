@@ -1,9 +1,9 @@
 /* Google Fonts - Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-.login-index {
+.register-index {
   background-color: #4070f4;
 }
-.login-index .forms {
+.register-index .forms {
   height: 100%;
   width: 100%;
   display: flex;
@@ -13,43 +13,43 @@
        column-gap: 30px;
   padding: 60px 0;
 }
-.login-index .form {
+.register-index .form {
   max-width: 430px;
   width: 100%;
   padding: 30px;
   border-radius: 6px;
   background: #FFF;
 }
-.login-index .form.signup {
+.register-index .form.signup {
   opacity: 0;
   pointer-events: none;
 }
-.login-index .forms.show-signup .form.signup {
+.register-index .forms.show-signup .form.signup {
   opacity: 1;
   pointer-events: auto;
 }
-.login-index .forms.show-signup .form.login {
+.register-index .forms.show-signup .form.login {
   opacity: 0;
   pointer-events: none;
 }
-.login-index header {
+.register-index header {
   font-size: 28px;
   font-weight: 600;
   color: #232836;
   text-align: center;
 }
-.login-index form {
+.register-index form {
   margin-top: 30px;
 }
-.login-index .form .field {
+.register-index .form .field {
   position: relative;
   height: 50px;
   width: 100%;
   margin-top: 20px;
   border-radius: 6px;
 }
-.login-index .field input,
-.login-index .field button {
+.register-index .field input,
+.register-index .field button {
   height: 100%;
   width: 100%;
   border: none;
@@ -57,15 +57,15 @@
   font-weight: 400;
   border-radius: 6px;
 }
-.login-index .field input {
+.register-index .field input {
   outline: none;
   padding: 0 15px;
   border: 1px solid #CACACA;
 }
-.login-index .field input:focus {
+.register-index .field input:focus {
   border-bottom-width: 2px;
 }
-.login-index .eye-icon {
+.register-index .eye-icon {
   position: absolute;
   top: 50%;
   right: 10px;
@@ -75,44 +75,44 @@
   cursor: pointer;
   padding: 5px;
 }
-.login-index .field button {
+.register-index .field button {
   color: #fff;
   background-color: #0171d3;
   transition: all 0.3s ease;
   cursor: pointer;
 }
-.login-index .field button:hover {
+.register-index .field button:hover {
   background-color: #016dcb;
 }
-.login-index .form-link {
+.register-index .form-link {
   text-align: right;
   margin-top: 10px;
 }
-.login-index .form-link-signup {
+.register-index .form-link-signup {
   margin-top: 10px;
   text-align: left;
 }
-.login-index .form-link span,
-.login-index .form-link a {
+.register-index .form-link span,
+.register-index .form-link a {
   font-size: 14px;
   font-weight: 400;
   color: #232836;
 }
-.login-index .form a {
+.register-index .form a {
   color: #0171d3;
   text-decoration: none;
 }
-.login-index .form-content a:hover {
+.register-index .form-content a:hover {
   text-decoration: underline;
 }
-.login-index .line {
+.register-index .line {
   position: relative;
   height: 1px;
   width: 100%;
   margin: 36px 0;
   background-color: #d4d4d4;
 }
-.login-index .line::before {
+.register-index .line::before {
   content: "Or";
   position: absolute;
   top: 50%;
@@ -122,17 +122,17 @@
   color: #8b8b8b;
   padding: 0 15px;
 }
-.login-index .media-options a {
+.register-index .media-options a {
   padding-left: 20px;
   display: flex;
   gap: 0.7rem;
   align-items: center;
 }
-.login-index a.facebook {
+.register-index a.facebook {
   color: #fff;
   background-color: #4267b2;
 }
-.login-index a.facebook .facebook-icon {
+.register-index a.facebook .facebook-icon {
   height: 28px;
   width: 28px;
   color: #0171d3;
@@ -143,29 +143,29 @@
   justify-content: center;
   background-color: #fff;
 }
-.login-index .facebook-icon,
-.login-index img.google-img {
+.register-index .facebook-icon,
+.register-index img.google-img {
   position: absolute;
   top: 50%;
   left: 15px;
   transform: translateY(-50%);
 }
-.login-index img.google-img {
+.register-index img.google-img {
   height: 20px;
   width: 20px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.login-index a.google {
+.register-index a.google {
   border: 1px solid #CACACA;
 }
-.login-index a.google span {
+.register-index a.google span {
   font-weight: 500;
   opacity: 0.6;
   color: #232836;
 }
 @media screen and (max-width: 400px) {
-  .login-index .form {
+  .register-index .form {
     padding: 20px 10px;
   }
-}/*# sourceMappingURL=login.css.map */
+}/*# sourceMappingURL=register.css.map */
