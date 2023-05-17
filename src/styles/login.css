@@ -1,5 +1,40 @@
 /* Google Fonts - Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+.modal-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 37%;
+  background-color: white;
+  border: 2px solid #000;
+  box-shadow: 24px;
+  padding: 4px;
+  border: none;
+}
+.modal-box .MuiTextField-root {
+  width: 100% !important;
+  padding-bottom: 30px;
+}
+.modal-box .submit-btn {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.modal-box #transition-modal-title {
+  font-family: "Arimo", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #F3F3F3;
+}
+.modal-box .modal__body {
+  padding: 10px 80px;
+}
+.modal-box #transition-modal-description {
+  padding-bottom: 20px;
+}
+
 .login-index {
   background-color: #4070f4;
 }
@@ -167,5 +202,11 @@
 @media screen and (max-width: 400px) {
   .login-index .form {
     padding: 20px 10px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .login-index .forms {
+    padding: 60px 12px;
   }
 }/*# sourceMappingURL=login.css.map */

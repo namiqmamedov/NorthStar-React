@@ -198,3 +198,11 @@
 
     }
 }
+
+@media screen and (max-width: 576px) {
+    .register-index{
+        .forms{
+            padding: 60px 12px;
+        }
+    }
+}

@@ -1,6 +1,45 @@
 /* Google Fonts - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
+.modal-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 37%;
+    background-color: white;
+    border: 2px solid #000;
+    box-shadow: 24px;
+    padding: 4px;
+    border: none;
+
+    .MuiTextField-root{
+        width: 100% !important;
+        padding-bottom: 30px;
+    }
+    .submit-btn{
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    #transition-modal-title{
+        font-family: 'Arimo',sans-serif;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #F3F3F3;
+    }
+    .modal__body{
+        padding: 10px 80px;
+    }
+
+    #transition-modal-description{
+        padding-bottom: 20px;
+    }
+
+}
+
 .login-index {
     background-color: #4070f4;
 
@@ -196,5 +235,13 @@
             padding: 20px 10px;
         }
 
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .login-index{
+        .forms{
+            padding: 60px 12px;
+        }
     }
 }

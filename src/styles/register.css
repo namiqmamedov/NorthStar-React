@@ -168,4 +168,10 @@
   .register-index .form {
     padding: 20px 10px;
   }
+}
+
+@media screen and (max-width: 576px) {
+  .register-index .forms {
+    padding: 60px 12px;
+  }
 }/*# sourceMappingURL=register.css.map */
