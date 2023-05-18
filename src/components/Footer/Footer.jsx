@@ -28,11 +28,6 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link>
-              Latest Post
-              </Link>
-            </li>
-            <li>
               <Link to={'contact'}>
               Contact Us
               </Link>
@@ -48,27 +43,12 @@ const Footer = () => {
           <h5 className='title'>HELP LINKS</h5>
           <ul>
             <li>
-              <Link>
-              Tracking
-              </Link>
-            </li>
-            <li>
-              <Link>
-              Order Status
-              </Link>
-            </li>
-            <li>
-              <Link>
+              <Link to={'delivery'}>
               Delivery
               </Link>
             </li>
             <li>
-              <Link>
-              Shipping Info
-              </Link>
-            </li>
-            <li>
-              <Link>
+              <Link to={'faq'}>
               FAQ
               </Link>
             </li>
@@ -78,22 +58,12 @@ const Footer = () => {
           <h5 className='title'>USEFUL LINKS</h5>
           <ul>
             <li>
-              <Link>
-              Special Offers
-              </Link>
-            </li>
-            <li>
-              <Link>
+              <Link to={'gift-card'}>
               Gift Cards
               </Link>
             </li>
             <li>
-              <Link>
-              Advetising
-              </Link>
-            </li>
-            <li>
-              <Link>
+              <Link to={'terms-of-use'}>
               Terms of Use
               </Link>
             </li>

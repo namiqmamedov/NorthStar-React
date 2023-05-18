@@ -1,0 +1,120 @@
+#gift-card{
+    text-align: center;
+    padding: 0px 150px;
+    h1{
+        text-align: center;
+        padding-bottom: 10px;
+        font-size: 26px;
+        font-family: 'Arimo',sans-serif;
+    }
+
+    img{
+        padding-bottom: 30px;
+    }
+
+    .content{
+        padding: 30px 25px;
+
+        p{
+            max-width: 76%;
+            text-align: left;
+        }
+    }
+
+    .gift-btn{
+        width: 100%;
+
+        button{
+            background: black;
+            transition: .3s ease-in-out;
+            padding: 10px 58px;
+            border: 2px solid black;
+
+
+            &:hover{
+                background: white;
+                color: black;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 576px){
+    #gift-card{
+        padding: 0px 12px !important;
+        img{
+            width: 100%;
+        }
+        .content{
+            padding: 0 25px;
+        }
+        .gift-btn{
+            button{
+                padding: 10px 10px;
+            }
+        }
+    }
+}
+
+@media  screen and (min-width: 576px) and (max-width: 768px){
+    #gift-card{
+        padding: 0px 12px !important;
+        img{
+            width: 100%;
+        }
+        .content{
+            padding: 0 25px;
+        }
+        .gift-btn{
+            button{
+                padding: 10px 10px;
+            }
+        }
+    }
+}
+
+@media  screen and (min-width: 768px) and (max-width: 992px){
+    #gift-card{
+        padding: 0px 12px !important;
+        img{
+            width: 100%;
+        }
+        .content{
+            padding: 0 25px;
+        }
+        .gift-btn{
+            button{
+                padding: 10px 10px;
+            }
+        }
+    }
+}
+
+@media  screen and (min-width: 992px) and (max-width: 1200px){
+    #gift-card{
+        padding: 0px 12px !important;
+        img{
+            width: 100%;
+        }
+        .content{
+            padding: 0 25px;
+        }
+        .gift-btn{
+            button{
+            }
+        }
+    }
+}
+
+@media  screen and (min-width: 1200px) {
+    #gift-card{
+        padding: 0px 12px !important;
+        img{
+            width: 100%;
+        }
+        .content{
+            padding: 30px 25px;
+        }
+
+    }
+}

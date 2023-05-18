@@ -1,0 +1,98 @@
+#gift-card {
+  text-align: center;
+  padding: 0px 150px;
+}
+#gift-card h1 {
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 26px;
+  font-family: "Arimo", sans-serif;
+}
+#gift-card img {
+  padding-bottom: 30px;
+}
+#gift-card .content {
+  padding: 30px 25px;
+}
+#gift-card .content p {
+  max-width: 76%;
+  text-align: left;
+}
+#gift-card .gift-btn {
+  width: 100%;
+}
+#gift-card .gift-btn button {
+  background: black;
+  transition: 0.3s ease-in-out;
+  padding: 10px 58px;
+  border: 2px solid black;
+}
+#gift-card .gift-btn button:hover {
+  background: white;
+  color: black;
+}
+
+@media only screen and (max-width: 576px) {
+  #gift-card {
+    padding: 0px 12px !important;
+  }
+  #gift-card img {
+    width: 100%;
+  }
+  #gift-card .content {
+    padding: 0 25px;
+  }
+  #gift-card .gift-btn button {
+    padding: 10px 10px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  #gift-card {
+    padding: 0px 12px !important;
+  }
+  #gift-card img {
+    width: 100%;
+  }
+  #gift-card .content {
+    padding: 0 25px;
+  }
+  #gift-card .gift-btn button {
+    padding: 10px 10px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  #gift-card {
+    padding: 0px 12px !important;
+  }
+  #gift-card img {
+    width: 100%;
+  }
+  #gift-card .content {
+    padding: 0 25px;
+  }
+  #gift-card .gift-btn button {
+    padding: 10px 10px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  #gift-card {
+    padding: 0px 12px !important;
+  }
+  #gift-card img {
+    width: 100%;
+  }
+  #gift-card .content {
+    padding: 0 25px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #gift-card {
+    padding: 0px 12px !important;
+  }
+  #gift-card img {
+    width: 100%;
+  }
+  #gift-card .content {
+    padding: 30px 25px;
+  }
+}/*# sourceMappingURL=gift-card.css.map */

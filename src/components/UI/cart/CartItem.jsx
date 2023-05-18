@@ -23,11 +23,11 @@ const CartItem = ({item}) => {
     }
 
     const decreaseItem = () => {
-       dispatch(cartActions.removeItem(id))
+       dispatch(cartActions.removeItem(size))
     }
 
     const deleteItem = () => {
-        dispatch(cartActions.deleteItem(id))
+        dispatch(cartActions.deleteItem(size))
     }
 
   return (

@@ -58,8 +58,9 @@ const ShoppingCart = () => {
 const Tr = (props) => {
     const {id, image, title, size, price, quantity} = props.item;
     const dispatch = useDispatch();
+    
     const deleteItem = () => {
-        dispatch(cartActions.deleteItem(id))
+        dispatch(cartActions.deleteItem(size))
     }
     return (
         <div class="product">

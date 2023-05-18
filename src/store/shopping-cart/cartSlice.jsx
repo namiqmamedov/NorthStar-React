@@ -16,12 +16,6 @@ const totalQuantity =
   localStorage.getItem("totalQuantity") !== null
     ? JSON.parse(localStorage.getItem("totalQuantity"))
     : 0;
-    
-    const deleteItem =
-    localStorage.getItem("deleteItem") !== null
-      ? JSON.parse(localStorage.getItem("deleteItem"))
-      : 0;
-   
 
 
 const initialState = {
@@ -74,11 +68,11 @@ const cartSlice =  createSlice({
 
         removeItem(state,action){
             const id = action.payload;
-            const existingItem = state.cartItems.find(item => item.id ===  id )
+            const existingItem = state.cartItems.find(item => item.size ===  id )
             state.totalQuantity--;
 
             if(existingItem.quantity === 1){
-                state.cartItems = state.cartItems.filter(item => item.id !== id)
+                state.cartItems = state.cartItems.filter(item => item.size !== id)
             }
             else{
                 existingItem.quantity--
@@ -100,11 +94,11 @@ const cartSlice =  createSlice({
         // delete item 
 
         deleteItem(state, action) {
-            const id = action.payload;
-            const existingItem = state.cartItems.find(item => item.id === id );
-      
+            const size = action.payload;
+            
+            const existingItem = state.cartItems.find(item => item.size === size );
             if (existingItem) {
-              state.cartItems = state.cartItems.filter(item => item.id !== id);
+              state.cartItems = state.cartItems.filter(item => item.size !== size);
               state.totalQuantity = state.totalQuantity - existingItem.quantity;
             }
       

@@ -9,6 +9,10 @@ import Checkout from '../pages/Checkout'
 import Login from '../pages/Login'
 import Signup from '../pages/Signup'
 import Error from '../pages/Error'
+import Faq from '../pages/Faq'
+import TermsOfUse from '../pages/TermsOfUse'
+import GiftCard from '../pages/GiftCard'
+import Delivery from '../pages/Delivery'
 
 
 const Routers = () => {
@@ -23,6 +27,10 @@ const Routers = () => {
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
+            <Route path="/faq" element={<Faq />} />
+            <Route path="/terms-of-use" element={<TermsOfUse />} />
+            <Route path="/gift-card" element={<GiftCard />} />
+            <Route path="/delivery" element={<Delivery />} />
             <Route path="*" element={<Error />} />
     </Routes>
   )
