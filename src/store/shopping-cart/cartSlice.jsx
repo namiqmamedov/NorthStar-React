@@ -1,5 +1,5 @@
 
-import {createSlice} from '@reduxjs/toolkit'
+import {createSlice,nanoid} from '@reduxjs/toolkit'
 
 
 const items =
@@ -44,7 +44,8 @@ const cartSlice =  createSlice({
                         price: newItem.price,
                         size: newItem.size,
                         quantity: 1,
-                        totalPrice: newItem.price
+                        totalPrice: newItem.price,
+                        unique: nanoid(),
                     })
             }
             else{
@@ -68,11 +69,11 @@ const cartSlice =  createSlice({
 
         removeItem(state,action){
             const id = action.payload;
-            const existingItem = state.cartItems.find(item => item.size ===  id )
+            const existingItem = state.cartItems.find(item => item.unique ===  id )
             state.totalQuantity--;
 
             if(existingItem.quantity === 1){
-                state.cartItems = state.cartItems.filter(item => item.size !== id)
+                state.cartItems = state.cartItems.filter(item => item.unique !== id)
             }
             else{
                 existingItem.quantity--
@@ -94,11 +95,11 @@ const cartSlice =  createSlice({
         // delete item 
 
         deleteItem(state, action) {
-            const size = action.payload;
+            const id = action.payload;
             
-            const existingItem = state.cartItems.find(item => item.size === size );
+            const existingItem = state.cartItems.find(item => item.unique ===  id )
             if (existingItem) {
-              state.cartItems = state.cartItems.filter(item => item.size !== size);
+                state.cartItems = state.cartItems.filter(item => item.unique !== id)
               state.totalQuantity = state.totalQuantity - existingItem.quantity;
             }
       

@@ -56,11 +56,11 @@ const ShoppingCart = () => {
 };
 
 const Tr = (props) => {
-    const {id, image, title, size, price, quantity} = props.item;
+    const {id, image, title, price, quantity,unique} = props.item;
     const dispatch = useDispatch();
     
     const deleteItem = () => {
-        dispatch(cartActions.deleteItem(size))
+        dispatch(cartActions.deleteItem(unique))
     }
     return (
         <div class="product">

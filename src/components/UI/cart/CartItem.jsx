@@ -8,7 +8,7 @@ import {cartActions}  from '../../../store/shopping-cart/cartSlice'
 
 const CartItem = ({item}) => {
 
-    const {id,title,price,image,quantity,size,totalPrice} = item
+    const {id,title,price,image,quantity,size,totalPrice,unique} = item
 
     const dispatch = useDispatch();
 
@@ -18,16 +18,17 @@ const CartItem = ({item}) => {
             title,
             price,
             size,
-            image
+            image,
+            unique
         }))
     }
 
     const decreaseItem = () => {
-       dispatch(cartActions.removeItem(size))
+       dispatch(cartActions.removeItem(unique))
     }
 
     const deleteItem = () => {
-        dispatch(cartActions.deleteItem(size))
+        dispatch(cartActions.deleteItem(unique))
     }
 
   return (
